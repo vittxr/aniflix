@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background: linear-gradient(rgb(0, 0, 1),rgba(0, 0, 0, 0.507)100%), url('/Html/filme1/filme-1.jpg')
+    
+}
+
+img {
+    width: 350px;
+    height: 400px;
+}
+
+.tags {
+    font-size: 13px;
+}
+
+.botao {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 500px;
+    margin-top: 15px;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    font-size: 14px;
+    width: 50%;
+    margin-top: 15px    
+}
+
+select {
+    margin-left: 8px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+titulo {
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.videos {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 470px;
+}
+
+.items img {
+    height: 150px;
+}
+
+.episodios{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.nome-episodio {
+    margin-left: 15px;
+}
+
+.items:hover{
+    border: 5px solid black;
+}
+
+section {
+    margin-top: 50px
+}
